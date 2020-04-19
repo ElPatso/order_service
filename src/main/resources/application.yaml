@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: service-one
+
+
+  main:
+    allow-bean-definition-overriding=true:server: true
+  port: 8000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    enabled: false
+
+test:
+  module: true
+
+kafka:
+  bootstrapAddress: localhost:9092
+
+camunda.bpm:
+  admin-user:
+    id: admin
+    password: admin
+    firstName: Admin
+  filter:
+    create: All tasks
+
